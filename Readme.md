@@ -26,3 +26,27 @@ Returning a system to a previous stable state if a new release causes problems.
 - If I made a mistake, I could use Git to **rollback** to a previous commit.  
 - Creating the `exam` project structure shows **container-like isolation** — everything is packaged together and reproducible.  
 - Overall, the workflow (create → test → commit → push) is a mini example of how **DevOps pipelines** work.
+
+
+Steps Followed to Complete This Assignment :- 
+
+Created the Exam Directory 
+
+Made a folder named exam in my home directory: mkdir exam
+
+Created script.sh :- nano script.sh
+
+Made the Script Executable :- chmod +x script.sh
+
+Executed Script and Saved Output :- ./script.sh > script.log
+
+Initialized Git Repository :- git init
+git remote add origin https://github.com/1132220471-exams/devopsrepo.git
+
+Created Feature Branch :- git checkout -b feature
+
+Added and Committed Files :- git add Readme.md script.sh script.log
+git commit -m "Add definitions, script, and output log"
+
+Pushed to GitHub :- git push -u origin feature
+
