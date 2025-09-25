@@ -1,0 +1,43 @@
+/home/sohail/exam
+sohail
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.3Gi       7.2Gi       698Mi       5.7Gi        12Gi
+Swap:          8.0Gi          0B       8.0Gi
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p3  476G   68G  405G  15% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.7G   96K  7.7G   1% /dev/shm
+efivarfs        374K  241K  129K  66% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.3M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+/dev/nvme0n1p3  476G   68G  405G  15% /home
+tmpfs           7.7G   16K  7.7G   1% /tmp
+/dev/nvme0n1p2  974M  726M  181M  81% /boot
+/dev/nvme0n1p1  599M   32M  568M   6% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  3.7M  1.6G   1% /run/user/1000
+total 12
+drwxr-xr-x. 1 sohail sohail   56 Sep 25 10:55 .
+drwx--x---+ 1 sohail sohail  794 Sep 25 10:49 ..
+-rw-r--r--. 1 sohail sohail 1339 Sep 25 10:50 Readme.md
+-rw-r--r--. 1 sohail sohail  910 Sep 25 10:55 script.log
+-rwxr-xr-x. 1 sohail sohail  271 Sep 25 10:54 script.sh
+#!/bin/bash
+
+# Print present working directory
+pwd
+
+# Print current user’s name
+whoami
+
+# Print memory resources available
+free -h
+
+# Print disk space available
+df -h
+
+# List all files in current directory
+ls -la
+
+# Print the contents of script.sh itself
+cat script.sh
